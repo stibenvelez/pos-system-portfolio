@@ -1,0 +1,15 @@
+{
+    "builds": [
+        {
+            "src": "index.js",
+            "use": "@vercel/node",
+            "config": { "excludeFiles": "public/**" }
+        }
+    ],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "/index.js"
+        }
+    ]
+}
